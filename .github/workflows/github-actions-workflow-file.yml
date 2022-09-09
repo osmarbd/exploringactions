@@ -1,0 +1,9 @@
+name: GitHub Action Demo
+on: push
+jobs: 
+  Example-Actions-Job:
+    name: Exploring GitHub Actions
+    run-on: ubuntu-lastest
+    steps:
+      # Display the event that triggered the workflow
+      - run: echo "The job was triggered by a ${{ github.event_name }} event."
